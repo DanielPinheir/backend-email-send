@@ -1,11 +1,10 @@
-require("dotenv").config();
 const express = require("express");
-const login = require("./controllers/login");
+const routes = require("./routes");
 
 const app = express();
 
 app.use(express.json());
 
-app.post("/login", login);
+app.use(routes);
 
 app.listen(process.env.PORT);

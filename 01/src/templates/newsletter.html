@@ -5,62 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter Informativa</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-        }
-
         h1 {
-            color: #333;
+            color: chocolate;
         }
 
         p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #666;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 14px;
-            color: #999;
+            color: dimgray;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Newsletter Informativa</h1>
-        <p>Olá,</p>
-        <p>Aqui estão as últimas informações e atualizações:</p>
-        <ul>
-            <li>Item 1: Descrição do item 1</li>
-            <li>Item 2: Descrição do item 2</li>
-            <li>Item 3: Descrição do item 3</li>
-        </ul>
-        <p>Para saber mais, clique no botão abaixo:</p>
-        <a class="cta-button" href="#">Saiba Mais</a>
-    </div>
-    <div class="footer">
-        &copy; 2023 Sua Empresa - Todos os direitos reservados.
-    </div>
+        <p>Olá, {{usuario}}!</p>
+        <p>{{texto}}</p>
 </body>
 </html>
